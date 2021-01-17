@@ -11,6 +11,9 @@
 		5F38FBE825B3EB09006333B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38FBE725B3EB09006333B1 /* ContentView.swift */; };
 		5F38FBEA25B3EB0C006333B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F38FBE925B3EB0C006333B1 /* Assets.xcassets */; };
 		5F38FBED25B3EB0C006333B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F38FBEC25B3EB0C006333B1 /* Preview Assets.xcassets */; };
+		5F869A9C25B41F3300A8148C /* NasaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F869A9B25B41F3300A8148C /* NasaViewModel.swift */; };
+		5F869AA225B41F8000A8148C /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F869AA125B41F8000A8148C /* NasaModel.swift */; };
+		5F869AA725B41FD300A8148C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F869AA625B41FD300A8148C /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		5F38FBE925B3EB0C006333B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F38FBEC25B3EB0C006333B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F38FBEE25B3EB0C006333B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F869A9B25B41F3300A8148C /* NasaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaViewModel.swift; sourceTree = "<group>"; };
+		5F869AA125B41F8000A8148C /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
+		5F869AA625B41FD300A8148C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,11 @@
 		5F38FBE425B3EB09006333B1 /* CombineSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5F869AA525B41FAD00A8148C /* Network */,
+				5F869AA025B41F7200A8148C /* Model */,
+				5F869A9A25B41F2100A8148C /* View Model */,
+				5F869A9925B41F0F00A8148C /* Views */,
 				5F38FBE525B3EB09006333B1 /* CombineSwiftUIApp.swift */,
-				5F38FBE725B3EB09006333B1 /* ContentView.swift */,
 				5F38FBE925B3EB0C006333B1 /* Assets.xcassets */,
 				5F38FBEE25B3EB0C006333B1 /* Info.plist */,
 				5F38FBEB25B3EB0C006333B1 /* Preview Content */,
@@ -67,6 +76,38 @@
 				5F38FBEC25B3EB0C006333B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F869A9925B41F0F00A8148C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F38FBE725B3EB09006333B1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F869A9A25B41F2100A8148C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F869A9B25B41F3300A8148C /* NasaViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		5F869AA025B41F7200A8148C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F869AA125B41F8000A8148C /* NasaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F869AA525B41FAD00A8148C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5F869AA625B41FD300A8148C /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F869AA725B41FD300A8148C /* Network.swift in Sources */,
 				5F38FBE825B3EB09006333B1 /* ContentView.swift in Sources */,
+				5F869A9C25B41F3300A8148C /* NasaViewModel.swift in Sources */,
+				5F869AA225B41F8000A8148C /* NasaModel.swift in Sources */,
 				5F38FBE625B3EB09006333B1 /* CombineSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
